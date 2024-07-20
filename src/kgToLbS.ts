@@ -5,8 +5,8 @@ function kgToLbs(weight:number|string):void{
 }
 
 //Function expression
+const kgToLbs2: (weight: string | number) => void = function( weight: number | string) : void {
+    console.log(typeof weight);
+}
 
-// const kgToLbs2 : (weight:number|string)=>void = function(weight:number|string) : void {
-
-// }
-
+console.log(typeof typeof kgToLbs2);

@@ -1,15 +1,15 @@
 //this is void function
-function calculateTax(income: number)  {
+function calculateTax(income: number): number  {
 
     if(income < 50_000) return income * 1.2;
-    
+    return 9.99;
 }
 
-function calculateTax1(income: number) : void  {
+function calculateTax1() : void  {
     // if income is declared but never used now it will throw error as we have just enabled in tsconfig
 }
 //this has return type
-function calculateNewTax(income: number){
+function calculateNewTax(){
     return 0;
 }
 function calculateNewTax2(income: number, taxYear?: number) : number{
