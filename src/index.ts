@@ -1,4 +1,6 @@
-import * as _ from 'lodash';
+import { getAddSub } from "./compute";
 
-let result = _.add(2,3);
-console.log(result);
+const [ add, sub ] = getAddSub(3,5);
+
+console.log("Addition: ", add);
+console.log("Subtraction: ", sub);
